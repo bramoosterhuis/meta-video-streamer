@@ -1,0 +1,9 @@
+DESCRIPTION = "Streamer image blueprint for ram"
+LICENSE = "MIT"
+
+require streamer-image.bb
+
+INITRAMFS_IMAGE_BUNDLE = "1"
+BOOT_SPACE = "1073741"
+INITRAMFS_MAXSIZE = "400000"
+IMAGE_FSTYPES = "${INITRAMFS_FSTYPES}"
